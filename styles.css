@@ -1,7 +1,7 @@
 
 
 .custom-gradient {
-    background: linear-gradient(to bottom, #F8D57E 0%, #fffbf1 100%);
+    background: linear-gradient(to bottom, #F8D57E 25%, #FEF5EA 50%);
   }
 
 .nav-bar-background {
@@ -30,7 +30,7 @@
 }
 
 .secondary-background {
-    background-color: #fffbf1;
+    background-color: #FEF5EA;
 }
 
 .custom-hover:hover {
