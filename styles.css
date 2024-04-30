@@ -1,0 +1,119 @@
+
+
+.custom-gradient {
+    background: linear-gradient(to bottom, #F8D57E 0%, #fffbf1 100%);
+  }
+
+.nav-bar-background {
+    background: #F8D57E
+}
+
+.primary-button {
+    background: #009379;
+    color: #FFFFFF;
+    border-width: 0px;
+    border-color: #000000;
+    
+}
+
+
+.secondary-button {
+    background: #fffbf1;
+    color: #009379;
+    border-color: #009379;
+    border-width: 2px;
+    
+}
+
+.button-force-height {
+    height: 50px;
+}
+
+.secondary-background {
+    background-color: #fffbf1;
+}
+
+.custom-hover:hover {
+    background-color: #6ee7b7; /* Example: a green background on hover */
+    color: #1f2937; /* Example: text color changes to a dark grey */
+    transform: scale(1.05); /* Slightly enlarges the button */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+  }
+
+.text-green-custom {
+    color: #009379;
+
+}
+
+.reduce-maintenance-background {
+    background-color: #f7d8d5;
+    color: #FF6250;
+    border-radius: 5px;
+    width: 15%;
+    align-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.trades-experience-background {
+    background-color: #7bd7c6;
+    color: #00715d;
+    border-radius: 5px;
+    width: 15%;
+    align-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.transparency-background {
+    background-color: #f5dea2;
+    color: #605230;
+    border-radius: 5px;
+    width: 15%;
+    align-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.icons-background {
+    background-color: #7bd7c6;
+    color: #00715d;
+    border-radius: 5px;
+    
+    align-self: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 5px;
+    margin-right: 10px;
+}
+
+.icon-hover:hover {
+    background-color: #6ee7b7; /* Example: a green background on hover */
+    color: #1f2937; /* Example: text color changes to a dark grey */
+    transform: scale(1.05); /* Slightly enlarges the button */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+  }
+
+
+.relative {
+    position: relative; /* Needed to position children absolutely relative to this container */
+}
+.absolute {
+    position: absolute; /* Position your image absolutely */
+    z-index: 0; /* Send it to the back */
+}
+.z-10 {
+    position: relative; /* Make sure this content stays above the absolutely positioned image */
+    z-index: 10; /* Higher z-index to ensure it's on top */
+}
+
+#movingEllipse {
+    transition: transform 0.2s ease-in-out; /* Smoothens the movement */
+}
