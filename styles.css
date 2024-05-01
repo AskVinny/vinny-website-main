@@ -1,4 +1,11 @@
+:root {
+    font-family: 'Franklin Gothic Medium',Arial, sans-serif;
+}
 
+.alternate-font {
+    font-family: 'Nimbus Sans', sans-serif;
+    font-style: italic;
+}
 
 .custom-gradient {
     background: linear-gradient(to bottom, #F8D57E 25%, #FEF5EA 50%);
