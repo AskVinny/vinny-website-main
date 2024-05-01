@@ -16,8 +16,8 @@
             <h1 class="text-xl text-black italic font-bold">ASKVINNY</h1>
         </div>
         <div class="flex items-center space-x-4">
-            <h1 class="hidden md:block text-l text-green-custom font-bold py-2 px-4  ">Contact us</h1>
-            <button onclick="window.location.href='#how-it-works'" class="rounded-lg secondary-button  font-bold py-2 px-4 hidden md:inline-flex ">
+            <h1 id="contact-button" class="hidden md:block text-l text-green-custom font-bold py-2 px-4  ">Contact us</h1>
+            <button id="how-it-works-button" class="rounded-lg secondary-button  font-bold py-2 px-4 hidden md:inline-flex ">
                 How it works
             </button>
             <button id="get-started-button" class="primary-button rounded-lg hover:bg-blue-700 text-white font-bold py-2 px-4  inline-flex md:inline-flex items-center">
@@ -68,7 +68,7 @@
 <section id="hero-section" class="text-center p-10 pb-40 secondary-background">
     <div class="p-10">
         <h2 class="text-4xl font-bold pb-10"><p class="important-text-decoration">Stop spending </p> too much time and money on maintenance.</h2>
-        <p>Vinny handles all tenant communication on your behalf. We negotiate, schedule and confirm maintenance appointments teching self serve options where possible.</p>
+        <p>Vinny handles all tenant communication on your behalf . We negotiate, schedule and confirm maintenance appointments teching self serve options where possible.</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="border-2 border-gray-200 hover:border-green-500 bg-white p-6 shadow rounded-xl flex flex-col justify-between items-center">
@@ -76,7 +76,7 @@
                 <i class="fa-solid fa-screwdriver-wrench "></i>
             </div>
             <h2 class="font-bold mb-2">Reduce Maintenance costs by 40%</h2>
-            <p>We harness the power of AI, to show you and your tenants to fix issues without the need for a tradesperson.</p>
+            <p>🤖 We harness the power of AI, to show you and your tenants to fix issues without the need for a tradesperson.</p>
             <div class="flex items-center"></div>
         </div>
         <div class="border-2 border-gray-200 hover:border-green-500 bg-white p-6 shadow rounded-xl flex flex-col justify-between items-center">
@@ -84,7 +84,7 @@
                 <i class="fa-solid fa-helmet-safety"></i>
             </div>
             <h2 class="font-bold mb-2">Only the best tradespeople at the best price</h2>
-            <p>We find the best tradepeople, negotiate with them all and handle all the scheduling. You only need to approve.</p>
+            <p>🛠️ We find the best tradepeople, negotiate with them all and handle all the scheduling. You only need to approve.</p>
             <div class="flex items-center"></div>
         </div>
         <div class="border-2 border-gray-200 hover:border-green-500 bg-white p-6 shadow rounded-xl flex flex-col justify-between items-center">
@@ -92,7 +92,7 @@
                 <i class="fa-solid fa-book-open"></i>
             </div>
             <h3 class="font-bold mb-2">Take control and empower your tenants</h3>
-            <p>Empower your tenants to self service with property onboarding guides and AI based maintenance advice. Controlled by you.</p>
+            <p>📖 Empower your tenants to self service with property onboarding guides and AI based maintenance advice. Controlled by you.</p>
             <div class="flex items-center"></div>
         </div>
     </div>
@@ -104,7 +104,7 @@
 <!-- Features Section -->
 <section class="flex flex-col md:flex-row items-center p-10 secondary-background" id="how-it-works">
     <div class="flex-1 flex justify-center md:justify-start p-4">
-        <img id="second-hero-gif" src="./assets/hero-gif.gif" alt="Vinny detecting boiler issue from image">
+        <img id="second-hero-gif" src="./assets/hero-gif.gif" alt="Vinny detecting boiler issue from image" onclick="toggleText(this)">
     </div>
     <div class="flex-1 p-4">
         <h2 class="text-3xl font-bold mb-4">How Does AskVinny Work?</h2>
@@ -112,49 +112,74 @@
             Vinny is easy to set up, fast to respond and designed to suit your needs.
         </p>
    <div>
-        <div class="border-2 border-gray-200 hover:border-green-500 flex items-center mt-2 mb-2 bg-white p-6 rounded shadow rounded-xl">
-            <div class="icons-background">      
-            <i class="icons-background fa-solid fa-people-roof mr-2 text-lg"></i>
+    <div id="info-div-1" class="info-div border-2 border-gray-200 hover:border-green-500 mt-2 mb-2 bg-white p-6 rounded shadow rounded-xl" onclick="toggleText(this)">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <i class="icons-background fa-solid fa-people-roof mr-2 text-lg"></i>
+                <h3 class="font-bold">Choose settings, approvals and tradespeople.</h3>
+            </div>
+            <i class="chevron fa-solid fa-chevron-down"></i>
         </div>
-            <h3 class="font-bold">Choose settings, approvals and tradespeople. </h3>
-        </div>
+        <p class="pt-4 additional-text hidden">Additional details here...</p>
     </div>
-    <div>
-        <div class="border-2 border-gray-200 hover:border-green-500 flex items-center mt-2 mb-2 bg-white p-6 rounded shadow rounded-xl">
-            <div class="icons-background">      
-            <i class="icons-background fa-solid fa-message mr-2 text-lg"></i>
+    
+    <div id="info-div-2" class="info-div border-2 border-gray-200 hover:border-green-500 mt-2 mb-2 bg-white p-6 rounded shadow rounded-xl" onclick="toggleText(this)">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <i class="icons-background fa-solid fa-message mr-2 text-lg"></i>
+                <h3 class="font-bold">Add your tenants to a simple whatsapp group</h3>
+            </div>
+            <i class="chevron fa-solid fa-chevron-down"></i>
         </div>
-            <h3 class="font-bold">Add your tenants to a simple whatsapp group</h3>
-        </div>
+        <p class="pt-4 additional-text hidden">Additional details here...</p>
     </div>
-    <div>
-        <div class="border-2 border-gray-200 hover:border-green-500 flex items-center mt-2 mb-2 bg-white p-6 rounded shadow rounded-xl">
-            <div class="icons-background">     
-            <i class=" icons-background fa-solid fa-briefcase mr-2 text-lg"></i>
+    
+    <div id="info-div-3" class="info-div border-2 border-gray-200 hover:border-green-500 mt-2 mb-2 bg-white p-6 rounded shadow rounded-xl" onclick="toggleText(this)">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <i class="icons-background fa-solid fa-briefcase mr-2 text-lg"></i>
+                <h3 class="font-bold">Vinny handles welcome packs, background checks and daily queries</h3>
+            </div>
+            <i class="chevron fa-solid fa-chevron-down"></i>
         </div>
-            <h3 class="font-bold">Vinny handles welcome packs, background checks and daily queries</h3>
-        </div>
+        <p class="pt-4 additional-text hidden">Additional details here...</p>
     </div>
-    <div></div>
-        <div class="border-2 border-gray-200 hover:border-green-500 flex items-center mt-2 mb-2 bg-white p-6 rounded shadow rounded-xl">
-            <div class="icons-background">    
-            <i class="icons-background fa-regular fa-calendar mr-2 text-lg"></i>
+    
+    <div id="info-div-4" class="info-div border-2 border-gray-200 hover:border-green-500 mt-2 mb-2 bg-white p-6 rounded shadow rounded-xl" onclick="toggleText(this)">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <i class="icons-background fa-regular fa-calendar mr-2 text-lg"></i>
+                <h3 class="font-bold">Review upcoming maintenance appointments.</h3>
+            </div>
+            <i class="chevron fa-solid fa-chevron-down"></i>
         </div>
-            <h3 class="font-bold">Review upcoming maintenance appointments.</h3>
-        </div>
-        <div class="border-2 border-gray-200 hover:border-green-500 flex items-center mt-2 mb-2 bg-white p-6 rounded shadow rounded-xl">
-            <div class="icons-background">    
-            <i class="icons-background fa-solid fa-circle-check mr-2 text-lg"></i>
-        </div>
-            <h3 class="font-bold">Confirm your happy with any planned work or quotes</h3>
-        </div>
-        <div class="border-2 border-gray-200 hover:border-green-500 flex items-center mt-2 mb-2 bg-white p-6 rounded shadow rounded-xl">
-            <div class="icons-background">    
-            <i class="icons-background fa-solid fa-unlock mr-2 text-lg"></i>
-        </div>
-            <h3 class="font-bold">Leave at any time</h3>
-        </div>
+        <p class="pt-4 additional-text hidden">Additional details here...</p>
     </div>
+    
+    <div id="info-div-5" class="info-div border-2 border-gray-200 hover:border-green-500 mt-2 mb-2 bg-white p-6 rounded shadow rounded-xl" onclick="toggleText(this)">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <i class="icons-background fa-solid fa-circle-check mr-2 text-lg"></i>
+                <h3 class="font-bold">Confirm your happy with any planned work or quotes</h3>
+            </div>
+            <i class="chevron fa-solid fa-chevron-down"></i>
+        </div>
+        <p class="pt-4 additional-text hidden">Additional details here...</p>
+    </div>
+    
+    <div id="info-div-6" class="info-div border-2 border-gray-200 hover:border-green-500 mt-2 mb-2 bg-white p-6 rounded shadow rounded-xl" onclick="toggleText(this)">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <i class="icons-background fa-solid fa-unlock mr-2 text-lg"></i>
+                <h3 class="font-bold">Leave at any time</h3>
+            </div>
+            <i class="chevron fa-solid fa-chevron-down"></i>
+        </div>
+        <p class="pt-4 additional-text hidden">Additional details here...</p>
+    </div>
+        
+    </div>
+    
     
 
 </section>
@@ -162,10 +187,17 @@
 
 
 <!-- Footer -->
-<footer class="bg-gray-800 text-white text-center p-4">
-    👷🏻‍♀️ Being Built by  Vinny Technology Limited 32-38 Antler, Tech Space Leman Street London E1 8EW 
-</br>Registered company 15618113
-
+<footer class="bg-gray-800 text-white p-4 flex justify-left items-center">
+    <div class="mr-64">
+        👷🏻‍♀️ Being Built by Vinny Technology Limited<br>
+        32-38 Antler, Tech Space Leman Street London E1 8EW<br>
+        Registered company 15618113
+    </div>
+    <ul class="list-none hidden md:flex md:flex-col md:items-start pl-64">
+        <li><a id="how-it-works-button" class="hover:text-gray-300">How Vinny works</a></li>
+        <li><a id="get-started-button" class="hover:text-gray-300">Get Started</a></li>
+        <li><a id="contact-button" class="hover:text-gray-300">Contact</a></li>
+    </ul>
 </footer>
 
 <script src="script.js"></script>

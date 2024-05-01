@@ -1,11 +1,12 @@
 
 
 .custom-gradient {
-    background: linear-gradient(to bottom, #F8D57E 25%, #FEF5EA 50%);
+    background: linear-gradient(to bottom, #FEF5EA 25%, #FEF5EA 50%);
   }
 
 .nav-bar-background {
-    background: #F8D57E
+    background: linear-gradient(to bottom, #F8D57E 75%, #FEF5EA 100%);
+    /*background: #F8D57E*/
 }
 
 .primary-button {
@@ -35,7 +36,10 @@
 
 .secondary-background {
     background-color: #FEF5EA;
+
 }
+
+
 
 .custom-hover:hover {
     background-color: #6ee7b7; /* Example: a green background on hover */
@@ -89,12 +93,11 @@
     background-color: #7bd7c6;
     color: #00715d;
     border-radius: 5px;
-    
     align-self: center;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 8px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-right: 10px;
 }
 
@@ -143,6 +146,12 @@
 }
 
 #second-hero-gif {
-    width: 200%;
+    width: 100%;
+    border-radius: 13em;
+    
 }
 
+.chevron  {
+    margin-left: auto; /* Pushes the icon to the far right */
+    padding-left: 12px; /* Optional: Adds some space between the text and the icon */
+}

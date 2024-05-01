@@ -22,3 +22,40 @@ document.addEventListener('scroll', function() {
 document.getElementById('get-started-button').addEventListener('click', function() {
     window.location.href = 'https://wa.me/447700161107';
 });
+
+// redirect for contact button
+document.getElementById('contact-button').addEventListener('click', function() {
+    window.location.href = 'https://wa.me/447312978650';
+});
+
+document.getElementById('how-it-works-button').addEventListener('click', function() {
+    window.location.href = '#how-it-works';
+});
+
+function toggleText(element) {
+    const allDivs = document.querySelectorAll('.info-div');
+    allDivs.forEach(div => {
+        const chevron = div.querySelector('.chevron');
+        const additionalText = div.querySelector('.additional-text');
+        if (div === element) {
+            // Toggle this div
+            if (chevron.classList.contains('fa-chevron-down')) {
+                chevron.classList.remove('fa-chevron-down');
+                chevron.classList.add('fa-chevron-up');
+                additionalText.classList.remove('hidden');
+                additionalText.classList.add('shown');
+            } else {
+                chevron.classList.remove('fa-chevron-up');
+                chevron.classList.add('fa-chevron-down');
+                additionalText.classList.remove('shown');
+                additionalText.classList.add('hidden');
+            }
+        } else {
+            // Reset other divs
+            chevron.classList.remove('fa-chevron-up');
+            chevron.classList.add('fa-chevron-down');
+            additionalText.classList.remove('shown');
+            additionalText.classList.add('hidden');
+        }
+    });
+}
