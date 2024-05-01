@@ -1,12 +1,12 @@
 
 
 .custom-gradient {
-    background: linear-gradient(to bottom, #FEF5EA 25%, #FEF5EA 50%);
+    background: linear-gradient(to bottom, #F8D57E 25%, #FEF5EA 50%);
   }
 
 .nav-bar-background {
-    background: linear-gradient(to bottom, #F8D57E 75%, #FEF5EA 100%);
-    /*background: #F8D57E*/
+   /*background: linear-gradient(to bottom, #F8D57E 75%, #FEF5EA 100%);*/
+    background: #F8D57E
 }
 
 .primary-button {
@@ -147,7 +147,7 @@
 
 #second-hero-gif {
     width: 100%;
-    border-radius: 13em;
+    /*border-radius: 13em;*/
     
 }
 
