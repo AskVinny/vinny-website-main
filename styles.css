@@ -16,6 +16,10 @@
     
 }
 
+.important-text-decoration {
+    text-decoration: underline;
+    text-decoration-color: #FF6250;
+}
 
 .secondary-button {
     background: #fffbf1;
@@ -117,3 +121,28 @@
 #movingEllipse {
     transition: transform 0.2s ease-in-out; /* Smoothens the movement */
 }
+
+.video-container {
+    position: relative; /* Positioning context for the image */
+    width: 100%; /* This ensures it will take the full width but you need to adjust this */
+    max-width: 400px; /* Adjust this width to match your image's width */
+    height: auto; /* Keeps the container's height dynamic based on content */
+    margin: auto; /* Centers the container */
+}
+.video-container video {
+    width: 100%; /* Ensures the video fills the container */
+    height: auto; /* Maintains aspect ratio */
+}
+.overlay-image {
+    position: absolute; /* Absolute position to overlay on the video */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Perfect center alignment */
+    width: auto; /* Maintain the image's dimensions */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+#second-hero-gif {
+    width: 200%;
+}
+
