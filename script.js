@@ -23,6 +23,10 @@ document.getElementById('get-started-button').addEventListener('click', function
     window.location.href = 'https://wa.me/447700161107';
 });
 
+document.getElementById('get-started-button-second').addEventListener('click', function() {
+    window.location.href = 'https://wa.me/447700161107';
+});
+
 // redirect for contact button
 document.getElementById('contact-button').addEventListener('click', function() {
     window.location.href = 'https://wa.me/447312978650';
