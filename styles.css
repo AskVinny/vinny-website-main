@@ -8,12 +8,13 @@
 }
 
 .custom-gradient {
-    background: linear-gradient(to bottom, #F8D57E 25%, #FEF5EA 50%);
+    background: linear-gradient(to bottom, #F8D57E 5%, #FEF5EA 50%); 
+    
   }
 
 .nav-bar-background {
    /*background: linear-gradient(to bottom, #F8D57E 75%, #FEF5EA 100%);*/
-    background: #F8D57E
+   background-color: #F8D57E;
 }
 
 .primary-button {
