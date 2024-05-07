@@ -33,6 +33,7 @@
 .nav-bar-background {
    /*background: linear-gradient(to bottom, #F8D57E 75%, #FEF5EA 100%);*/
    background-color: var(--background-color);
+   border-bottom: 1px solid var(--secondary-color);
 }
 
 .footer {
