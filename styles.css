@@ -1,5 +1,12 @@
 :root {
     font-family: 'Franklin Gothic Medium',Arial, sans-serif;
+    --primary-color: #8335FD; /* Blue */
+    --secondary-color: #0F0742; /* Red */
+    --tertiary-color: #fbfbfb;
+    --background-color: #FFFFFF; /* Light grey */
+    --primary-text-color: #2c3e50; /* Dark blue */
+    --secondary-text-color: #FFFFFF;
+    --tertiary-text-color: #e784de;
 }
 
 .alternate-font {
@@ -7,21 +14,50 @@
     font-style: italic;
 }
 
+.hero-image-test {
+    background-image: url("./assets/line-drawing.png");
+    background-size: contain;
+    background-position: c;
+    
+
+}
+
 .custom-gradient {
-    background: linear-gradient(to bottom, #F8D57E 5%, #FEF5EA 50%); 
+    
+    /*background: linear-gradient(to bottom, #F8D57E 5%, #FEF5EA 50%); */
+    background-color: var(--background-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-aligns child elements horizontally */
+        width: 100%;
     
   }
 
+.text-gradient-1 {
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(111deg, var(--primary-color), var(--tertiary-text-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
 .nav-bar-background {
    /*background: linear-gradient(to bottom, #F8D57E 75%, #FEF5EA 100%);*/
-   background-color: #F8D57E;
+   background-color: var(--tertiary-color);
+}
+
+.nav-askvinny-bar {
+    background-color: var(--tertiary-color); /* White background */
+    color: var(--primary-text-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    border-bottom: 1px solid #848080; /* Light grey border on the bottom */
 }
 
 .primary-button {
-    background: #009379;
-    color: #FFFFFF;
-    border-width: 0px;
-    border-color: #000000;
+    background: var(--primary-color);
+    color: var(--secondary-text-color);
+    border-width: 2px;
+    border-color: var(--primary-text-color);
+    border-radius: 10%;
     
 }
 
@@ -31,9 +67,9 @@
 }
 
 .secondary-button {
-    background: #fffbf1;
-    color: #009379;
-    border-color: #009379;
+    background: var(--secondary-color);
+    color: var(--secondary-text-color);
+    border-color: black;
     border-width: 2px;
     
 }
@@ -171,4 +207,32 @@
 .chevron  {
     margin-left: auto; /* Pushes the icon to the far right */
     padding-left: 12px; /* Optional: Adds some space between the text and the icon */
+}
+
+
+.content-container {
+    text-align: center; /* Centers all text within the container */
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Ensures the image is centered */
+    align-items: center; /* Useful if there's vertical alignment needed */
+}
+
+.max-w-50 {
+    width: 100%;
+    max-width: 100%; /* Limits width to 50% of the parent */
+    margin: 0 auto; /* Centers the content */
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 16px; /* Provides space between buttons */
+}
+
+.secondary-button, .primary-button {
+    flex: none; /* Resets any previous flex settings to maintain button width */
 }
