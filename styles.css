@@ -1,6 +1,16 @@
 :root {
     font-family: 'Franklin Gothic Medium',Arial, sans-serif;
+    --primary-color: #8335FD; /* Purple */
+    --secondary-color: #0F0742; /* Navy */
+    --tertiary-color: #fbfbfb;
+    --background-color: #FFFFFF;
+    --secondary-background-color: #f4effb;
+    --primary-text-color: #2c3e50; /* Dark blue */
+    --secondary-text-color: #FFFFFF;
+    --tertiary-text-color: #e784de;
 }
+
+
 
 .alternate-font {
     font-family: 'Nimbus Sans', sans-serif;
@@ -8,17 +18,25 @@
 }
 
 .custom-gradient {
-    background: linear-gradient(to bottom, #F8D57E 5%, #FEF5EA 50%); 
+    background: var(--secondary-color); 
     
   }
 
+.text-gradient {
+    
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, var(--primary-color), var(--tertiary-text-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
 .nav-bar-background {
    /*background: linear-gradient(to bottom, #F8D57E 75%, #FEF5EA 100%);*/
-   background-color: #F8D57E;
+   background-color: var(--background-color);
 }
 
 .primary-button {
-    background: #009379;
+    background: var(--primary-color);
     color: #FFFFFF;
     border-width: 0px;
     border-color: #000000;
@@ -31,9 +49,9 @@
 }
 
 .secondary-button {
-    background: #fffbf1;
-    color: #009379;
-    border-color: #009379;
+    background: var;
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
     border-width: 2px;
     
 }
@@ -43,7 +61,7 @@
 }
 
 .secondary-background {
-    background-color: #FEF5EA;
+    background-color: var(--secondary-background-color);
 
 }
 
@@ -57,7 +75,7 @@
   }
 
 .text-green-custom {
-    color: #009379;
+    color: var(--secondary-color);
 
 }
 
@@ -171,4 +189,22 @@
 .chevron  {
     margin-left: auto; /* Pushes the icon to the far right */
     padding-left: 12px; /* Optional: Adds some space between the text and the icon */
+}
+
+.flex-1 {
+    flex: 1; /* Flex grow to take available space equally */
+    min-width: 0; /* Prevents flexbox from letting the min-content sizing interfere */
+}
+
+.hero-image-combined {
+    width: 100%; /* Ensures the image takes the full width of its container */
+    height: auto; /* Maintains the aspect ratio */
+    max-height: 100%; /* Prevents the image from becoming too tall */
+}
+
+@media (max-width: 768px) {
+    .flex-1 {
+        flex: 1 0 100%; /* Full width on smaller screens */
+        max-width: 100%; /* Ensures no overflow on small devices */
+    }
 }
