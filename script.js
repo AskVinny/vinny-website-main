@@ -29,7 +29,7 @@ document.getElementById('get-started-button-second').addEventListener('click', f
 
 // redirect for contact button
 document.getElementById('contact-button').addEventListener('click', function() {
-    window.location.href = 'https://wa.me/447312978650';
+    window.location.href = 'https://calendly.com/contact-hmmc/quick-intro-to-vinny';
 });
 
 document.getElementById('how-it-works-button').addEventListener('click', function() {
