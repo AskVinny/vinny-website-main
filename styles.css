@@ -35,6 +35,11 @@
    background-color: var(--background-color);
 }
 
+.footer {
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+}
+
 .primary-button {
     background: var(--primary-color);
     color: #FFFFFF;
