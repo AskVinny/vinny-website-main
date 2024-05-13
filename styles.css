@@ -8,6 +8,7 @@
     --primary-text-color: #2c3e50; /* Dark blue */
     --secondary-text-color: #FFFFFF;
     --tertiary-text-color: #e784de;
+    --border-color: #d4d4d4;
 }
 
 
@@ -33,7 +34,7 @@
 .nav-bar-background {
    /*background: linear-gradient(to bottom, #F8D57E 75%, #FEF5EA 100%);*/
    background-color: var(--background-color);
-   border-bottom: 1px solid var(--secondary-color);
+   border-bottom: 1px solid var(--border-color);
 }
 
 .footer {
