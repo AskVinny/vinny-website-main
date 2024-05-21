@@ -67,7 +67,7 @@ function toggleText(element) {
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         document.getElementById('phone-popup').classList.remove('hidden');
-    }, 15000); // 30 seconds
+    }, 30000); // 30 seconds
 
     document.getElementById('submit-phone').addEventListener('click', function() {
         const phoneNumber = document.getElementById('phone-number').value;
