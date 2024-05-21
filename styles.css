@@ -215,3 +215,11 @@
         max-width: 100%; /* Ensures no overflow on small devices */
     }
 }
+
+#phone-popup {
+    display: none; /* Hidden by default */
+}
+
+#phone-popup.show {
+    display: flex; /* Show the popup */
+}
